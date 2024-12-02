@@ -15,8 +15,13 @@ app.get('/mcdo', (req, res) => {
     res.send("Manger chez McDo c'est mal");
 });
 
+
 app.get('/kfc', (req, res) => {
     res.send("KFC c'est bon");
+});
+
+app.get('/fruits', (req, res) => {
+    res.send("Manger chez des fruits c'est mal");
 });
 
 app.listen(port, () => {
