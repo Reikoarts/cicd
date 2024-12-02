@@ -1,0 +1,681 @@
+body{
+	width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: white;
+}
+body > ul {
+	padding: 0;
+}
+.head{
+	width: 208px;
+	height:182px;
+}
+.globalHead{
+	margin-top: 40px;
+	position:absolute;
+	z-index:2;
+  min-width: 14rem;
+}
+.face{
+	float:left;
+	margin-top: -1rem;
+}
+ .chacha{
+     width: 230px;
+     height: 280px;
+     margin: 0 40px;
+}
+ .headCat{
+     width: 130px;
+     height: 90px;
+     background: black;
+     padding: 20px 10px 10px 10px;
+     border-radius: 60px 60px 36px 36px / 80px 80px 30px 30px;
+     border: 1px solid silver;
+     border-bottom: 0;
+	 display:inline-block;
+}
+ .WhiteEyeReflectionLeft{
+     width: 60px;
+     height: 72px;
+     margin-top: 8px;
+     background: linear-gradient(200deg, white 60%, rgba(238,238,238,0.1));
+     border-radius: 41px 21px 6px 35px / 70px 34px 4px 8px;
+     float: left;
+     margin-right: 5px;
+}
+ .WhiteEyeReflectionRight{
+     width: 60px;
+     height: 72px;
+     margin-top: 8px;
+     background: linear-gradient(170deg, white 65%, rgba(238,238,238,0.1));
+     border-radius: 21px 41px 35px 6px / 34px 70px 8px 4px;
+     float: left;
+     margin-right: 5px;
+}
+ .WhiteEyeLeft{
+     width: 60px;
+     height: 80px;
+     background: silver;
+     border-radius: 36px 19px 8px 35px / 70px 36px 4px 8px;
+     float: left;
+     margin-right: 5px;
+}
+ .WhiteEyeRight{
+     width: 60px;
+     height: 80px;
+     background: silver;
+     border-radius: 19px 36px 35px 8px / 36px 70px 8px 4px;
+     display: inline-block;
+     margin-left: 5px;
+}
+ .BlackEyeLeft{
+     background: black;
+     width: 14px;
+     height: 28px;
+     border-radius: 100px / 150px;
+     padding: 5px;
+     transform: rotate(6deg);
+     float: right;
+     margin-top: 26px;
+}
+ .BlackEyeRight{
+     background: black;
+     width: 14px;
+     height: 28px;
+     border-radius: 100px / 150px;
+     padding: 5px;
+     transform: rotate(6deg);
+     float: left;
+     margin-top: 26px;
+}
+ .BlackEyeReflection{
+     width: 18px;
+     height: 26px;
+     border-radius: 100px / 132px;
+     transform: rotate(-8deg);
+     float: left;
+     margin: 4px 0px 0px -3px;
+     background: rgb(146, 146, 146);
+}
+ .BlackEyeReflectionWhite{
+     width: 8px;
+     height: 10px;
+     margin: -2px -3px -7px 0px;
+     background: white;
+     transform: rotate(-5deg);
+     float: right;
+     border-radius: 100px / 140px;
+}
+ .mouthLeft{
+     width: 68px;
+     background: black;
+     height: 19px;
+     border-radius: 30px 150px 120px 150px / 50px 78px 90px 100px;
+     border-bottom: 2px solid grey;
+     margin-top: -4px;
+     transform: rotate(4deg);
+     border-left: 2px solid grey;
+     float: left;
+     margin-left: -4px;
+}
+ .mouthRight{
+     width: 68px;
+     background: black;
+     height: 19px;
+     border-radius: 150px 30px 150px 120px / 78px 50px 100px 90px;
+     border-bottom: 2px solid grey;
+     transform: rotate(-4deg);
+     border-right: 2px solid grey;
+     float: right;
+     margin-top: -20px;
+     margin-right: -4px;
+}
+ .mouthRightReflection{
+     width: 34px;
+     height: 10px;
+     background: rgba(255, 255, 255, 0.25);
+     border-radius: 150px / 40px;
+     transform: rotate(-1deg);
+     margin-left: 16px;
+     margin-top: 5px;
+}
+ .mouthLeftReflection{
+     width: 34px;
+     height: 10px;
+     background: rgba(255, 255, 255, 0.25);
+     border-radius: 150px / 40px;
+     transform: rotate(1deg);
+     margin-left: 18px;
+     margin-top: 5px;
+}
+.tooth{
+  margin-left:0.1rem;
+}
+ .toothLeft{
+     width: 14px;
+     height: 10px;
+     background: linear-gradient(170deg, rgb(190, 189, 174) 35%, rgba(230, 229, 214,0));
+     border: 2px solid rgba(200, 199, 184, 0.3);
+     border-radius: 0px 0px 14px 130px / 0px 0px 8px 90px;
+     border-top: 0px;
+     margin-left: 14px;
+     float: left;
+     margin-top: -2px;
+}
+ .toothRight{
+     width: 14px;
+     height: 10px;
+     background: linear-gradient(190deg, rgb(190, 189, 174) 35%, rgba(230, 229, 214,0));
+     border: 2px solid rgba(200, 199, 184, 0.3);
+     border-radius: 0 0 130px 14px / 0 0 90px 8px;
+     border-top: 0px;
+     margin-left: 5px;
+     float: right;
+     margin-right: 12px;
+     margin-top: -2px;
+}
+ .earBottomRight{
+     width: 60px;
+     height: 34px;
+     background: black;
+     border-radius: 65px 22px 150px 100px / 45px 22px 110px 90px;
+     margin-top: -11px;
+     margin-left: -22px;
+}
+ .earTopRight::after {
+     width: 26px;
+     height: 26px;
+     content: "n";
+     margin-left: 6px;
+     background: black;
+     padding-bottom: 9px;
+}
+ .earTopRight {
+     width: 51px;
+     height: 24px;
+     background: black;
+     border-radius: 65px 27px 150px 100px / 45px 22px 110px 90px;
+     transform: rotate(-40deg);
+     margin-top: 12px;
+     margin-left: -16px;
+     border-bottom: 2px solid grey;
+}
+ .earsRight{
+     margin-top: 56px;
+     overflow: hidden;
+     max-width: 80px;
+     margin-left: -11px;
+	 display:inline-block;
+}
+ .earBottomLeft{
+     width: 60px;
+     height: 34px;
+     background: black;
+     border-radius: 22px 65px 100px 150px / 22px 45px 90px 110px;
+     margin-top: -11px;
+     margin-right: -22px;
+}
+ .earTopLeft::after {
+     width: 26px;
+     height: 26px;
+     content: "MM";
+     margin-left: 36px;
+     background: black;
+     padding-bottom: 17px;
+}
+ .earTopLeft {
+     width: 51px;
+     height: 24px;
+     background: black;
+     border-radius: 27px 65px 100px 150px / 22px 45px 90px 110px;
+     transform: rotate(40deg);
+     margin-top: 12px;
+     margin-left: 2px;
+     border-bottom: 2px solid grey;
+}
+ .earsLeft{
+     margin-top: 56px;
+     overflow: hidden;
+     max-width: 38px;
+     margin-right: -12px;
+	 float: left;
+}
+ .HairWickLeft{
+     width: 30px;
+     height: 22px;
+     background: black;
+     border-radius: 14px 121px 20px 167px / 30px 150px 14px 146px;
+     border: 1px solid grey;
+     transform: rotate(16deg);
+     margin-left: 70px;
+     margin-bottom: -15px;
+     border-bottom: 0px;
+     border-right: 0px;
+     float: left;
+     margin-right: -15px;
+}
+ .HairWickRight{
+     display: inline-block;
+     width: 22px;
+     margin-top: -1px;
+     height: 37px;
+     z-index: 5555;
+     background: black;
+     border-radius: 122px 20px 111px 10px / 98px 58px 150px 171px;
+     transform: rotate(-18deg);
+}
+ .hair{
+     margin-bottom: -32px;
+}
+ .OEarLeft{
+     width: 64px;
+     height: 86px;
+     background: black;
+     border-radius: 28px 140px 0px 50px / 97px 150px 0px 50px;
+     float: left;
+     margin-left: 10px;
+}
+ .OEarRight{
+     width: 0;
+     height: 0;
+     border-left: 52px solid transparent;
+     border-right: 52px solid transparent;
+     border-top: 85px solid white;
+     display: inline-block;
+     margin-left: -53px;
+     margin-right: -53px;
+     margin-bottom: -70px;
+}
+ .OEarLeftInside{
+     width: 64px;
+     height: 15px;
+     background: black;
+     margin-top: 30px;
+     margin-left: -18px;
+     border-radius: 600px / 160px;
+     transform: rotate(78deg);
+     border-top: 2px solid grey;
+}
+ .OEarRightInside{
+     width: 18px;
+     height: 1px;
+     background: black;
+     margin-top: 10px;
+     margin-left: 23px;
+     border-radius: 1000px / 160px;
+     transform: rotate(14deg);
+     border-bottom: 2px solid grey 
+}
+ .OEarTopInside{
+     width: 21px;
+     height: 6px;
+     background: black;
+     margin-top: 9px;
+     margin-left: 37px;
+     border-radius: 1000px / 160px;
+     transform: rotate(40deg);
+}
+ .AEarLeft{
+     width: 64px;
+     height: 86px;
+     background: black;
+     border-radius: 140px 28px 50px 0px / 150px 97px 50px 0px;
+     float: right;
+     margin-right: 11px;
+}
+ .AEarRight{
+     width: 0;
+     height: 0;
+     border-left: 52px solid transparent;
+     border-right: 52px solid transparent;
+     border-top: 85px solid white;
+     float: left;
+     margin-left: -53px;
+     margin-right: -53px;
+}
+ .AEarLeftInside{
+     width: 64px;
+     height: 15px;
+     background: black;
+     margin-top: 30px;
+     margin-left: 18px;
+     border-radius: 600px / 160px;
+     transform: rotate(-78deg);
+     border-top: 2px solid grey;
+}
+ .AEarRightInside{
+     width: 18px;
+     height: 1px;
+     background: black;
+     margin-top: 10px;
+     margin-left: 23px;
+     border-radius: 1000px / 160px;
+     transform: rotate(-14deg);
+     border-bottom: 2px solid grey 
+}
+ .AEarTopInside{
+     width: 21px;
+     height: 6px;
+     background: black;
+     margin-top: 9px;
+     margin-left: 6px;
+     border-radius: 1000px / 160px;
+     transform: rotate(-40deg);
+}
+ .neck{
+     width: 30px;
+     height: 30px;
+     background: black;
+     transform: rotate(45deg);
+     margin-left: 87px;
+     margin-top: -30px;
+}
+ .bodyTop{
+     width: 62px;
+     height: 58px;
+     background: black;
+     margin-left: 71px;
+     margin-top: -4px;
+     border-radius: 40px 40px 30px 30px / 80px 80px 20px 20px;
+}
+ .legLeft::before {
+     content: "-";
+     background: black;
+     padding: 0px 17px 0px 0px;
+     margin-left: 0px;
+}
+ .legLeft {
+     width: 20px;
+     height: 60px;
+     border-radius: 60px 60px 50px 50px / 34px 160px 50px 50px;
+     background: black;
+     transform: rotate(-6deg);
+     border: 1px solid silver;
+     border-top: 0px;
+     margin-top: -36px;
+     float:left;
+}
+ .bodyBottom{
+     width: 50px;
+     margin-left: 6px;
+     position: absolute;
+     z-index: 3;
+}
+ .legRight::before {
+     content: "-";
+     background: black;
+     padding: 0px 14px 0px 0px;
+     margin-left: 0px;
+}
+ .legRight {
+     width: 20px;
+     height: 60px;
+     border-radius: 60px 60px 50px 50px / 160px 34px 50px 50px;
+     background: black;
+     transform: rotate(6deg);
+     border: 1px solid silver;
+     border-top: 0px;
+     margin-left: 0px;
+     float: right;
+     margin-top: -36px;
+}
+ .footLeft{
+     width: 27px;
+     height: 26px;
+     border-radius: 150px 100px 160px 100px / 160px 160px 100px 130px;
+     background: black;
+     border: 1px solid silver;
+     border-top: 0px;
+     float:left;
+}
+ .footRight{
+     float:right;
+     width: 27px;
+     height: 26px;
+     border-radius: 100px 150px 100px 160px / 160px 160px 130px 100px;
+     background: black;
+     border: 1px solid silver;
+     border-top: 0px;
+}
+ .bodyBottom2{
+     margin-left: 3px;
+     position: absolute;
+     z-index: 4;
+}
+ .bodyBottom3{
+     width: 64px;
+     position: absolute;
+     margin-top: -7px;
+     z-index: 1;
+}
+ .bodyBottom1{
+     width: 21px;
+     height: 66px;
+     background: black;
+     border-radius: 100px / 80px;
+     position: absolute;
+     transform: rotate(90deg);
+     margin-top: -45px;
+     margin-left: 20px;
+     border: 1px solid silver;
+     border-left: 0px;
+     z-index: 2;
+     border-right: 0;
+}
+ .footLeft2{
+     width: 20px;
+     height: 30px;
+     border-radius: 200px 100px 200px 172px / 150px 160px 200px 200px;
+     transform: rotate(202deg);
+     background: black;
+     border: 1px solid silver;
+     border-top: 0px;
+     float: left;
+}
+ .footRight2{
+     width: 20px;
+     height: 30px;
+     border-radius: 100px 200px 172px 210px / 160px 150px 200px 200px;
+     transform: rotate(-202deg);
+     background: black;
+     border: 1px solid silver;
+     border-top: 0px;
+     float: right;
+}
+ #bodyBottom{
+     margin-left: 71px;
+}
+ .bodyExtension{
+     width: 100px;
+     height: 22px;
+     background: black;
+     margin-left: 92px;
+     margin-top: -14px;
+     transform:rotate(-10deg);
+     -webkit-transform:rotate(-10deg);
+     -moz-transform:rotate(-10deg);
+     -o-transform:rotate(-10deg);
+}
+ #rotating {
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+}
+ .bodyExtension1{
+     width: 30px;
+     height: 22px;
+     background: black;
+     position: absolute;
+     z-index: 3;
+     right: -18px;
+     transform: rotate(37deg);
+     margin-top: 9px;
+     border-radius: 31px 8px 6px 5px / 10px 10px 6px 10px;
+     border-top: 1px solid silver;
+}
+ .bodyExtension2{
+     width: 30px;
+     height: 22px;
+     background: black;
+     position: absolute;
+     z-index: 2;
+     right: -24px;
+     transform: rotate(-6deg);
+     margin-top: -6px;
+     border-radius: 31px 8px 6px 5px / 10px 10px 6px 10px;
+     border-top: 1px solid silver;
+}
+ .bodyExtension3{
+     width: 30px;
+     height: 22px;
+     background: black;
+     position: absolute;
+     z-index: 1;
+     right: -14px;
+     transform: rotate(-47deg);
+     margin-top: -10px;
+     border-radius: 31px 8px 6px 5px / 10px 10px 6px 10px;
+}
+ .OEars{
+     margin-right: -69px;
+     margin-bottom: -23px;
+}
+ #OEarTrans{
+     -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+     -o-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+}
+ .AEars{
+     margin-left: 135px;
+     margin-bottom: -23px;
+}
+ .puce{
+     width:4px;
+     height:4px;
+     border-radius: 25px;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     -o-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
+     position:absolute;
+     z-index: 10;
+}
+ .pupuce{
+     width:4px;
+     height:4px;
+     border-radius: 25px;
+     background: black;
+     margin-right:20px;
+}
+ .puceMove1{
+     margin-top:50px;
+     margin-left: 300px;
+     transform: rotate(30deg);
+}
+ .puceMove2{
+     margin-top:20px;
+     margin-left: 240px;
+     transform: rotate(80deg);
+}
+ .puceMove3{
+     margin-top:160px;
+     margin-left: 320px;
+     transform: rotate(-30deg);
+}
+ .puceTrainee{
+     width: 4px;
+     position: absolute;
+}
+ .puceGreen{
+     width:2px;
+     height:2px;
+     border-radius:25px;
+     background: green;
+     top: 50px;
+     left: 50px;
+     z-index: 10;
+}
+ .puceRed{
+     width:8px;
+     height:8px;
+     position: absolute;
+     border-radius:25px;
+     background: red;
+}
+ .solarsystem{
+     width: 300px;
+     margin: 50px auto;
+     position: absolute;
+}
+ ul.solarsystem li {
+     -webkit-animation-iteration-count:infinite;
+     -webkit-animation-timing-function:linear;
+     -webkit-animation-name:orbit;
+}
+ ul.solarsystem li.mercury {
+    -webkit-animation-duration:5s;
+}
+ ul.solarsystem li.mercury span {
+     background: #b6bac5;
+     top: 10px;
+     left: 10px;
+}
+ 
+ @keyframes eyeLeft {
+     0% {
+        margin-right: 0px;
+    }
+     15% {
+        margin-right: 14px;
+    }
+     20% {
+        margin-right: 0px;
+    }
+     50% {
+        margin-right: 0px;
+    }
+     100%{
+        margin-right: 0px;
+    }
+}
+ @keyframes rotated {
+     0% {
+         margin-top: -14px;
+         transform:rotate(0deg);
+         -webkit-transform:rotate(0deg);
+         -moz-transform:rotate(0deg);
+         -o-transform:rotate(0deg);
+    }
+     50% {
+         margin-top: 6px;
+         transform:rotate(25deg);
+         -webkit-transform:rotate(25deg);
+         -moz-transform:rotate(25deg);
+         -o-transform:rotate(25deg);
+    }
+     100%{
+         margin-top: -14px;
+         transform:rotate(0deg);
+         -webkit-transform:rotate(0deg);
+         -moz-transform:rotate(0deg);
+         -o-transform:rotate(0deg);
+    }
+}
+ .BlackEyeLeft {
+     animation-name: eyeLeft;
+     animation-duration: 3s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+}
+ #rotating{
+     animation-name: rotated;
+     animation-duration: 2s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+}
